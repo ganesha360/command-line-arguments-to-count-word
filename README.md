@@ -18,24 +18,27 @@ Split the line using .split
 ### Step 6: 
 Count the length of the word and print it
 ## PROGRAM:
-```
-Developed by Ganesh R
-Register no: 22009090
+```PYTHON
+Program for getting the word count from the contents of a file using command line arguments
+Developed by: GANESH R
+RegisterNumber: 212222240029
+
 import sys
+fp=open(sys.argv[1],'r')
 count=0
-OUTPUT:
-RESULT:
-Thus the program is written to find the word count from the contents of a file using command line
-arguments.
-with open(sys.argv[1],'r') as file:
-for line in file:
-word=line.split()
-count += len(word)
-print("Program is developed BY: Ganesh R")
-print("Word count in file= ",count)
+for line in fp:
+    words=line.split()
+    count+=len(words)
+print("Number of words in a file",count)
 ```
 ### OUTPUT:
-![output](./WhatsApp%20Image%202023-01-26%20at%2022.59.16.jpg)
+
+![PY6](https://github.com/ganesha360/command-line-arguments-to-count-word/assets/120884552/afb06c87-7547-4420-9d72-d45160fdc1ac)
+
+![PY7](https://github.com/ganesha360/command-line-arguments-to-count-word/assets/120884552/7e3f78dc-780e-486d-ad38-6a9b8c99d3a0)
+
+![PY8](https://github.com/ganesha360/command-line-arguments-to-count-word/assets/120884552/482491e5-6b48-4817-b312-852ff1b7a209)
+
 
 ## RESULT:
 Thus the program is written to find the word count from the contents of a file using command line arguments.
